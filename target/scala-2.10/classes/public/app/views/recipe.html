@@ -1,0 +1,160 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <i class="fa fa-trophy"></i> Recipe Awards
+        </div>
+        <div class="panel-body">
+          <table class="table table-hover">
+            <tr ng-repeat="award in awards">
+              <td style="width: 40px">
+                <i ng-show="award.awardType.id == 1" data-toggle="tooltip" data-placement="left"
+                  tooltip-placement="top" tooltip="Best of Show" class="fa fa-trophy fa-4x" style="color: green"></i>
+                <i ng-show="award.awardType.id == 2" data-toggle="tooltip" data-placement="left"
+                       tooltip-placement="top" tooltip="1st Place" class="fa fa-beer fa-4x" style="color: #ffd700"></i>
+                <i ng-show="award.awardType.id == 3" data-toggle="tooltip" data-placement="left"
+                       tooltip-placement="top" tooltip="2nd Place" class="fa fa-beer fa-4x" style="color: #cd7f32"></i>
+                <i ng-show="award.awardType.id == 4" data-toggle="tooltip" data-placement="left"
+                       tooltip-placement="top" tooltip="3rd Place" class="fa fa-beer fa-4x" style="color: silver"></i>
+              </td>
+              <td>{{award.eventname}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-trophy"></i>&nbsp;&nbsp; {{recipe.name}} ({{recipe.style}}) -- Competition Scores
+            <span class="pull-right" ng-show="me.publicId == recipe.userPublicId"><a ng-click="open()" class="btn btn-xs btn-default">Add Score</a></span></h3>
+        </div>
+        <div class="panel-body">
+          <div google-chart chart="chartObject" style="height: 300px"></div>
+          <a class="pull-right" href="{{recipe.link}}" target="_blank">View the recipe</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 pull-right">
+
+    </div>
+    <!-- <div class="col-lg-3 pull-right">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-4">
+              <i class="fa fa-tasks fa-3x"></i>
+            </div>
+            <div class="col-md-8">
+              <h4>Recipe Details</h4>
+            </div>
+          </div>
+        </div>
+        <a target="_blank" href="{{recipe.link}}">
+          <div class="panel-footer announcement-bottom">
+            <div class="row">
+              <div class="col-xs-6">
+                Recipe
+              </div>
+              <div class="col-xs-6 text-right">
+                <i class="fa fa-arrow-circle-right"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div> -->
+    </div>
+    <div class="col-lg-12">
+      <div class="clearfix">
+        <textarea class="form-control" ng-model="commentData.comment" rows="3" placeholder="Send some constructive criticism..." tabindex="1"></textarea>
+
+        <div class="text-highlight" style="height: 50px">
+          <div class="share-type pull-left">
+            <!-- <a href="javascript:;" class="btn btn-default" data-original-title="Post an Image">
+              <i class="fa fa-picture-o"></i>
+            </a>
+            <a href="javascript:;" class="btn btn-default" data-original-title="Upload a Video">
+              <i class="fa fa-video-camera"></i>
+            </a>
+            <a href="javascript:;" class="btn btn-default" data-original-title="Post an Idea">
+              <i class="fa fa-lightbulb-o"></i>
+            </a>
+            <a href="javascript:;" class="btn btn-default" data-original-title="Ask a Question">
+              <i class="fa fa-question-circle"></i>
+            </a> -->
+          </div>
+          <div class="pull-right">
+            <a class="btn btn-danger btn-sm" ng-click="postComment()" tabindex="2">Post</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="message-wrap">
+        <div class="msg-wrap">
+          <div class="media msg" ng-repeat="comment in comments | orderBy:'-created'">
+            <a class="pull-left" href="#">
+                <img gravatar-src="'{{comment.user.email}}'" gravatar-size="64" class="profile-avatar-img thumbnail" alt="Profile Image" />
+            </a>
+            <div class="media-body">
+              <small class="pull-right time"><i class="fa fa-clock-o"></i> {{comment.created | relativeDate}}</small>
+              <h5 class="media-heading">{{comment.user.firstname}} {{comment.user.lastname}}</h5>
+              <small class="col-lg-10">{{comment.comment}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<script type="text/ng-template" id="newNoteModal.html">
+    <div class="modal-header">
+        <h3 class="modal-title">New Note</h3>
+    </div>
+    <div class="modal-body">
+      <form class="form-horizontal" action="" method="post" style="margin-top: 30px">
+
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="name">Score:</label>
+          <div class="col-md-9">
+            <input type="text" placeholder="" ng-model="note.score" value="" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="name">Notes:</label>
+          <div class="col-md-9">
+            <textarea ng-model="note.criticism" class="form-control" rows="5"></textarea>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="awarded">Awarded:</label>
+          <div class="col-md-9">
+            <select ng-model="note.awarded" class="form-control">
+              <option value="">--- Select award ---</option>
+              <option value="1">Best of Show</option>
+              <option value="2">1st Place</option>
+              <option value="3">2nd Place</option>
+              <option value="4">3rd Place</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="event">Event:</label>
+          <div class="col-md-9">
+            <input type="text" ng-model="note.eventname" class="form-control" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</script>

@@ -1,0 +1,11 @@
+- !!models.AwardType
+    type:       "Best in Show"
+
+- !!models.AwardType
+    type:       "1st Place"
+
+- !!models.AwardType
+    type:       "2nd Place"
+
+- !!models.AwardType
+    type:       "3rd Place"

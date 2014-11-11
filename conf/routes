@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+#GET 	 /app/ 										  controllers.Assets.at(path="/public", file="/app/index.html")
+GET 		/app/ 										  controllers.Application.app()
+
+# Role driven routes
+#GET     /club/settings              controllers.Application.index()
+#GET     /profile/settings           controllers.Application.index()
+#GET     /admin                      controllers.Application.index()
+
+# Restful Web Services
+GET     /store                      controllers.StoreService.getStore()
+GET     /user                       controllers.UserService.getUser()
+GET     /user/recipes               controllers.UserService.getUserRecipes()
+GET     /user/:publicId             controllers.UserService.getUserById(publicId: String)
+GET     /user/recipes/:publicId     controllers.UserService.getRecipeById(publicId: String)
+GET     /user/:publicId/recipes     controllers.UserService.getFriendRecipes(publicId: String)
+GET     /member                     controllers.UserService.getUserMembers()
+GET     /user/search/:search        controllers.UserService.searchUsers(search: String)
+GET     /club/:id                   controllers.ClubService.get(id: Long)
+POST    /recipe/new                 controllers.UserService.newRecipe()
+POST    /recipe/:publicId/note      controllers.UserService.newRecipeScore(publicId: String)
+POST    /recipe/:publicId/comment   controllers.UserService.newRecipeComment(publicId: String)
+POST    /feedback                   controllers.Application.sendFeedback()
+
+# User routes (login, logout, register)
+GET     /login                      controllers.Application.renderLogin()
+POST    /login                      controllers.Application.login()
+GET     /logout                     controllers.Application.logout()
+POST    /signup                     controllers.Application.signup()
+GET		 /register/verify/:uid			 controllers.Application.verifyEmail(uid: String)
+POST		/profile/edit							 controllers.Application.editProfile()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

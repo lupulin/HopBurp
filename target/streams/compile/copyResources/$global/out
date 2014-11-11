@@ -1,0 +1,11 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/application.conf,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/awardtype-data.yml,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/awardtype-data.yml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/club-data.yml,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/club-data.yml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/evolutions,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/evolutions)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/play.plugins,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/play.plugins)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/product-data.yml,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/product-data.yml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/routes,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/user-data.yml,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/user-data.yml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/evolutions/default,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/evolutions/default)[0m
+[0m[[0mdebug[0m] [0m	(/Users/topher/Sites/hopburp21/conf/evolutions/default/1.sql,/Users/topher/Sites/hopburp21/target/scala-2.10/classes/evolutions/default/1.sql)[0m

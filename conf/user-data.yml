@@ -1,0 +1,46 @@
+- !!models.User
+    email:          bob@bob.com
+    password:       secret
+    firstname:      Bob
+    lastname:       Barker
+    profile:        "This is my profile!"
+    location:       "Columbus, OH"
+    website:        "www.hopburp.com"
+    title:          "Web App Developer, Homebrewer"
+    updates:        true
+    reminders:      true
+    notifications:  true
+    active:         false
+    awardsCount:    0
+    recipeCount:    0
+    rank:           "Novice"
+
+- !!models.User
+    email:          toph@toph.com
+    password:       secret
+    firstname:      Topher
+    lastname:       Bartos
+    profile:        "This is my profile!"
+    location:       "Columbus, OH"
+    website:        "www.hopburp.com"
+    title:          "Web App Developer, Homebrewer"
+    updates:        true
+    reminders:      true
+    notifications:  true
+    active:         true
+    awardsCount:    0
+    recipeCount:    0
+    rank:           "Novice"
+
+- !!models.User
+    email:          toph@hopburp.com
+    password:       secret
+    firstname:      Chris
+    lastname:       Bartos
+    active:         false
+    awardsCount:    14
+    recipeCount:    100
+    rank:           "Grand Master"
+    location:       "Columbus, OH"
+    website:        "www.hopburp.com"
+    title:          "Web App Developer, Homebrewer"

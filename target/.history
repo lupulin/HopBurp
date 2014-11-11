@@ -1,0 +1,19 @@
+test
+exit
+test
+clean
+compile
+test
+exit
+test
+exit
+run
+help play
+update
+run
+play
+run
+compile
+clean
+compile
+run

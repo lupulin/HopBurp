@@ -1,0 +1,136 @@
+<div class="row">
+  <div class="col-md-3 col-sm-5">
+
+    <div style="margin-top: 25px">
+      <a href="https://en.gravatar.com/gravatars/new" tooltip="Click to create a profile picture"><img gravatar-src="'{{user.email}}'" gravatar-size="263" class="profile-avatar-img thumbnail" alt="Profile Image"></a>
+    </div> <!-- /.profile-avatar -->
+
+    <div class="list-group">
+
+      <a href="#/users/{{user.publicId}}" class="list-group-item">
+        <i class="fa fa-tasks text-primary"></i> &nbsp;&nbsp;My Profile
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a>
+      <!-- <a href="#/messages" class="list-group-item">
+        <i class="fa fa-envelope text-primary"></i> &nbsp;&nbsp;Messages
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a> -->
+      <!-- <a href="#/friends" class="list-group-item">
+        <i class="fa fa-group text-primary"></i> &nbsp;&nbsp;Friends
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a> -->
+      <!-- <a href="#/settings" class="list-group-item">
+        <i class="fa fa-cog text-primary"></i> &nbsp;&nbsp;Settings
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a> -->
+    </div>
+
+  </div>
+
+
+
+  <div class="col-md-9">
+    <h3 style="margin-top: 25px">Chris Bartos</h3>
+    <h5 class="text-muted">Web App Developer, Homebrewer</h5>
+    <hr>
+
+  <div class="container">
+	  <div class="row">
+	    <div class="message-wrap col-lg-8">
+        <div class="msg-wrap">
+          <div class="media msg">
+            <a class="pull-left" href="#">
+                <img class="media-object" alt="64x64" src="http://placehold.it/50x50">
+            </a>
+            <div class="media-body">
+              <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+              <h5 class="media-heading">Naimish Sakhpara</h5>
+              <small class="col-lg-10">Location H-2, Ayojan Nagar, Near Gate-3, Near
+                  Shreyas Crossing Dharnidhar Derasar,
+                  Paldi, Ahmedabad 380007, Ahmedabad,
+                  India
+                  Phone 091 37 669307
+                  Email aapamdavad.district@gmail.com</small>
+            </div>
+          </div>
+          <div class="alert alert-info msg-date">
+            <strong>Today</strong>
+          </div>
+          <div class="media msg">
+            <a class="pull-left" href="#">
+                <img class="media-object" alt="64x64" src="http://placehold.it/50x50">
+            </a>
+            <div class="media-body">
+              <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+
+              <h5 class="media-heading">Naimish Sakhpara</h5>
+              <small class="col-lg-10">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+            </div>
+          </div>
+          <div class="media msg">
+            <a class="pull-left" href="#">
+                <img class="media-object" alt="64x64" src="http://placehold.it/50x50">
+            </a>
+            <div class="media-body">
+              <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+
+              <h5 class="media-heading">Naimish Sakhpara</h5>
+              <small class="col-lg-10">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+            </div>
+          </div>
+
+          <div class="media msg">
+            <a class="pull-left" href="#">
+              <img class="media-object" alt="64x64" src="http://placehold.it/50x50">
+            </a>
+            <div class="media-body">
+              <small class="pull-right time"><i class="fa fa-clock-o"></i> 12:10am</small>
+              <h5 class="media-heading">Naimish Sakhpara</h5>
+
+              <small class="col-lg-10">Arnab Goswami: "Some people close to Congress Party and close to the government had a #secret #meeting in a farmhouse in Maharashtra in which Anna Hazare send some representatives and they had a meeting in the discussed how to go about this all fast and how eventually this will end."</small>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <textarea class="form-control" rows="3" placeholder="Share what you've been up to..." tabindex="1"></textarea>
+
+          <div class="text-highlight" style="height: 50px">
+            <div class="share-type pull-left">
+              <a href="javascript:;" class="btn btn-default" data-original-title="Post an Image">
+              	<i class="fa fa-picture-o"></i>
+              </a>
+              <a href="javascript:;" class="btn btn-default" data-original-title="Upload a Video">
+              	<i class="fa fa-video-camera"></i>
+              </a>
+              <a href="javascript:;" class="btn btn-default" data-original-title="Post an Idea">
+              	<i class="fa fa-lightbulb-o"></i>
+              </a>
+              <a href="javascript:;" class="btn btn-default" data-original-title="Ask a Question">
+              	<i class="fa fa-question-circle"></i>
+              </a>
+            </div>
+            <div class="pull-right">
+              <a class="btn btn-danger btn-sm" tabindex="2">Post</a>
+            </div>
+          </div>
+        </div>
+	    </div>
+	  </div>
+	</div>
+
+  </div> <!-- /.col -->
+</div> <!-- /.row -->
+
+<script>
+$(document).ready(function() {
+
+    $(function() {
+
+        $(".msg-wrap").animate({ scrollTop: $(document).height() }, "fast");
+    });
+});
+</script>

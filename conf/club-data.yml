@@ -1,0 +1,17 @@
+- !!models.Club
+   fullname:          "Scioto, Olentangy, Derby Zymurgists"
+   abbreviatedName:   "SODZ"
+   city:              "Columbus"
+   state:             "OH"
+   awardsCount:       0
+   recipeCount:       0
+   memberCount:       0
+
+- !!models.Club
+   fullname:          "American Homebrewer's Association"
+   abbreviatedName:   "AHA"
+   city:              "Boulder"
+   state:             "Colorado"
+   awardsCount:       0
+   recipeCount:       0
+   memberCount:       0

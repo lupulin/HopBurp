@@ -1,0 +1,141 @@
+
+<div class="row">
+  <div class="col-md-3 col-sm-5">
+    <div style="margin-top: 25px">
+      <img width="263" height="263" src="assets/app/images/me.jpg" class="profile-avatar-img thumbnail" alt="Profile Image">
+    </div> <!-- /.profile-avatar -->
+    <div class="list-group">
+      <a href="#/profile" class="list-group-item">
+        <i class="fa fa-tasks text-primary"></i> &nbsp;&nbsp;My Profile
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a>
+
+      <a href="#/messages" class="list-group-item">
+        <i class="fa fa-envelope text-primary"></i> &nbsp;&nbsp;Messages
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a>
+
+      <a href="#/friends" class="list-group-item">
+        <i class="fa fa-group text-primary"></i> &nbsp;&nbsp;Friends
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a>
+
+      <a href="#/settings" class="list-group-item active">
+        <i class="fa fa-cog text-primary"></i> &nbsp;&nbsp;Settings
+
+        <i class="fa fa-chevron-right list-group-chevron pull-right"></i>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <h3 style="margin-top: 25px">{{user.firstname}} {{user.lastname}}</h3>
+    <h5 class="text-muted">{{user.title}}</h5>
+    <hr>
+
+    <form class="form-horizontal" action="" method="post" style="margin-top: 30px">
+      <h3>Avatar</h3>
+      <div class="well">
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="name">Avatar</label>
+            <div class="col-md-9">
+              <input id="name" name="name" type="file" class="form-control">
+            </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Account Information</h3>
+      <div class="well">
+
+        <!-- Name input-->
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="name">First name</label>
+          <div class="col-md-9">
+            <input id="name" name="name" type="text" placeholder="First name" ng-model="user.firstname" value="" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="name">Last name</label>
+          <div class="col-md-9">
+            <input id="name" name="name" type="text" placeholder="Last name" ng-model="user.lastname" value="" class="form-control">
+          </div>
+        </div>
+
+        <!-- Email input-->
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="email">Your E-mail</label>
+          <div class="col-md-9">
+            <input id="email" name="email" type="text" placeholder="Your email" ng-model="user.email" value="" class="form-control">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Change Password</h3>
+      <div class="well">
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="email">Current Password</label>
+          <div class="col-md-9">
+            <input id="email" name="email" type="password" placeholder="Current Password" value="" class="form-control">
+          </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="email">New Password</label>
+          <div class="col-md-9">
+            <input id="email" name="email" type="password" placeholder="New Password" value="" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label" for="email">Confirm Password</label>
+          <div class="col-md-9">
+            <input id="email" name="email" type="password" placeholder="Confirm Password" value="" class="form-control">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Email Notifications</h3>
+      <div class="well">
+        <div class="form-group">
+          <div class="col-md-offset-3 col-md-8">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="user.updates"> Updates
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-3 col-md-8">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="user.reminders"> Calendar Reminders
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-3 col-md-8">
+            <div class="checkbox">
+              <input type="checkbox" ng-model="user.notifications"> Message Notifications
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-8">
+          <button type="submit" class="btn btn-success btn-lg" style="margin:0px">Save Settings</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div> <!-- /.col -->
+</div> <!-- /.row -->
