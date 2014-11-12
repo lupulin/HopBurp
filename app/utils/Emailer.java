@@ -12,7 +12,7 @@ public class Emailer {
   protected User user;
   private String message;
 
-  private static final String FROM_EMAIL = "HopBurp <toph@hopburp.com>";
+  private static final String FROM_EMAIL = "HopBurp <YourEmail@google.com>";
 
   private Boolean debug = true;
 

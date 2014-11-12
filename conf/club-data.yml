@@ -1,8 +1,8 @@
 - !!models.Club
-   fullname:          "Scioto, Olentangy, Derby Zymurgists"
-   abbreviatedName:   "SODZ"
-   city:              "Columbus"
-   state:             "OH"
+   fullname:          "The Awesome Homebrewers"
+   abbreviatedName:   "TAH"
+   city:              "Sunnyside"
+   state:             "FL"
    awardsCount:       0
    recipeCount:       0
    memberCount:       0

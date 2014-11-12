@@ -4,9 +4,9 @@
     firstname:      Bob
     lastname:       Barker
     profile:        "This is my profile!"
-    location:       "Columbus, OH"
-    website:        "www.hopburp.com"
-    title:          "Web App Developer, Homebrewer"
+    location:       "America"
+    website:        "www.google.com"
+    title:          "Homebrewer"
     updates:        true
     reminders:      true
     notifications:  true
@@ -18,12 +18,12 @@
 - !!models.User
     email:          toph@toph.com
     password:       secret
-    firstname:      Topher
-    lastname:       Bartos
+    firstname:      Monkey
+    lastname:       Man
     profile:        "This is my profile!"
-    location:       "Columbus, OH"
-    website:        "www.hopburp.com"
-    title:          "Web App Developer, Homebrewer"
+    location:       "America"
+    website:        "www.facebook.com"
+    title:          "Homebrewer"
     updates:        true
     reminders:      true
     notifications:  true
@@ -33,7 +33,7 @@
     rank:           "Novice"
 
 - !!models.User
-    email:          toph@hopburp.com
+    email:          blake@blake.com
     password:       secret
     firstname:      Chris
     lastname:       Bartos
@@ -41,6 +41,6 @@
     awardsCount:    14
     recipeCount:    100
     rank:           "Grand Master"
-    location:       "Columbus, OH"
-    website:        "www.hopburp.com"
-    title:          "Web App Developer, Homebrewer"
+    location:       "America"
+    website:        "www.yahoo.com"
+    title:          "Homebrewer"
